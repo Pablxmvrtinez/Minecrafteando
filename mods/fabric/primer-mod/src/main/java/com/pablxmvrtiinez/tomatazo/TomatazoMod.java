@@ -10,6 +10,7 @@ public class TomatazoMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModItems.initialize();
         LOGGER.info("Tomatazo se ha cargado correctamente.");
     }
 }
