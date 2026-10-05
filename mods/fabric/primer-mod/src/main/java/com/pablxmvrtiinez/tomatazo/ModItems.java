@@ -12,7 +12,7 @@ import java.util.function.Function;
 public class ModItems {
     public static final Item TOMATE = register(
             "tomate",
-            Item::new,
+            TomateItem::new,
             new Item.Properties().stacksTo(16)
     );
 
