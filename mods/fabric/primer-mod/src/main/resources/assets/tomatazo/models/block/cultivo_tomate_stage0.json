@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "tomatazo:block/cultivo_tomate_stage0"
+  }
+}

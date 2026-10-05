@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "tomatazo:block/cultivo_tomate_stage0" },
+    "age=1": { "model": "tomatazo:block/cultivo_tomate_stage0" },
+    "age=2": { "model": "tomatazo:block/cultivo_tomate_stage1" },
+    "age=3": { "model": "tomatazo:block/cultivo_tomate_stage1" },
+    "age=4": { "model": "tomatazo:block/cultivo_tomate_stage2" },
+    "age=5": { "model": "tomatazo:block/cultivo_tomate_stage2" },
+    "age=6": { "model": "tomatazo:block/cultivo_tomate_stage3" },
+    "age=7": { "model": "tomatazo:block/cultivo_tomate_stage3" }
+  }
+}
