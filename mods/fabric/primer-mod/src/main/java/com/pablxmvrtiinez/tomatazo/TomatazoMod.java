@@ -12,6 +12,7 @@ public class TomatazoMod implements ModInitializer {
     public void onInitialize() {
         ModBlocks.initialize();
         ModItems.initialize();
+        ModEntities.initialize();
         ModLootTables.initialize();
         LOGGER.info("Tomatazo se ha cargado correctamente.");
     }
