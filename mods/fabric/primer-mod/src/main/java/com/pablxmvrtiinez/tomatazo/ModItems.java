@@ -5,16 +5,24 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 
 import java.util.function.Function;
 
 public class ModItems {
+    public static final FoodProperties TOMATE_FOOD = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationModifier(0.3F)
+            .build();
+
     public static final Item TOMATE = register(
             "tomate",
             TomateItem::new,
-            new Item.Properties().stacksTo(16)
+            new Item.Properties()
+                    .stacksTo(16)
+                    .food(TOMATE_FOOD)
     );
 
     public static final Item SEMILLAS_TOMATE = register(
