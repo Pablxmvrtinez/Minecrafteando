@@ -5,7 +5,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
+import net.minecraft.world.entity.projectile.throwableitemprojectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -34,23 +34,21 @@ public class TomateProjectileEntity extends ThrowableItemProjectile {
     protected void onHitEntity(EntityHitResult hitResult) {
         super.onHitEntity(hitResult);
 
-        if (level().isClientSide()) {
-            return;
-        }
-
         Entity entity = hitResult.getEntity();
 
         if (entity instanceof LivingEntity livingEntity) {
             double hitY = hitResult.getLocation().y;
             double headY = livingEntity.getEyeY();
 
-            boolean golpeEnLaCabeza = hitY >= headY - 0.35D;
+            boolean golpeEnLaCabeza = hitY >= headY - 0.75D;
 
             if (golpeEnLaCabeza) {
                 livingEntity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 0));
-                TomatazoMod.LOGGER.info("Tomatazo en la cabeza: entidad cegada 3 segundos.");
+                livingEntity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 0));
+
+                TomatazoMod.LOGGER.info("Tomatazo en la cabeza: entidad cegada y marcada 3 segundos.");
             } else {
-                TomatazoMod.LOGGER.info("Tomatazo golpeó entidad, pero no en la cabeza.");
+                TomatazoMod.LOGGER.info("Tomatazo golpeó entidad, pero no suficientemente alto.");
             }
         }
     }
@@ -58,9 +56,6 @@ public class TomateProjectileEntity extends ThrowableItemProjectile {
     @Override
     protected void onHit(HitResult hitResult) {
         super.onHit(hitResult);
-
-        if (!level().isClientSide()) {
-            this.discard();
-        }
+        this.discard();
     }
 }

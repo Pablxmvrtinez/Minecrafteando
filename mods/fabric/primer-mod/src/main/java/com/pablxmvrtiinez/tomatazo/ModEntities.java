@@ -18,9 +18,9 @@ public class ModEntities {
             BuiltInRegistries.ENTITY_TYPE,
             TOMATE_PROYECTIL_KEY,
             EntityType.Builder.<TomateProjectileEntity>of(TomateProjectileEntity::new, MobCategory.MISC)
-                    .sized(0.25F, 0.25F)
-                    .clientTrackingRange(4)
-                    .updateInterval(10)
+                    .sized(0.6F, 0.6F)
+                    .clientTrackingRange(8)
+                    .updateInterval(5)
                     .build(TOMATE_PROYECTIL_KEY)
     );
 

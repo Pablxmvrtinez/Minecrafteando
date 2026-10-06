@@ -1,5 +1,6 @@
 package com.pablxmvrtiinez.tomatazo;
 
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -7,7 +8,9 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 
 import java.util.function.Function;
 
@@ -44,5 +47,14 @@ public class ModItems {
 
     public static void initialize() {
         TomatazoMod.LOGGER.info("Registrando objetos de Tomatazo.");
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
+                .register(output -> output.insertAfter(Items.APPLE, TOMATE));
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS)
+                .register(output -> output.insertAfter(Items.WHEAT_SEEDS, SEMILLAS_TOMATE));
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
+                .register(output -> output.insertAfter(Items.WHEAT_SEEDS, SEMILLAS_TOMATE));
     }
 }
