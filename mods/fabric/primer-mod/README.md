@@ -53,3 +53,14 @@ La funcionalidad principal está terminada. El mod incluye obtención, cultivo, 
 ## Autor
 
 Proyecto creado por Pablxmvrtiinez como práctica de programación Java y modding de Minecraft.
+
+## Capturas
+
+### Cultivo y semillas de tomate
+
+![Cultivo de tomate](capturas/cultivo-tomate.png)
+
+### Tomate lanzado
+
+![Tomate lanzado](capturas/tomate-lanzado.png)
+
