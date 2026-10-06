@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "tomatazo:tomate",
+              "condition": {
+                "condition": "minecraft:block_state_property",
+                "block": "tomatazo:cultivo_tomate",
+                "properties": {
+                  "age": "7"
+                }
+              },
+              "modifier": {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 2.0,
+                  "max": 5.0
+                }
+              }
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tomatazo:semillas_tomate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "condition": {
+        "condition": "minecraft:block_state_property",
+        "block": "tomatazo:cultivo_tomate",
+        "properties": {
+          "age": "7"
+        }
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tomatazo:semillas_tomate",
+          "modifier": {
+            "function": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 0.0,
+              "max": 2.0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
