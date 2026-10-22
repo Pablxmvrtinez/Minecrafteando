@@ -2,7 +2,7 @@
   "minecraft": "1.20.1",
   "forge": "47.4.10",
   "java": "17",
-  "source": "Archivos originales de PACK-CODEX-1.20.1-FORGE.zip recuperados de biblioteca",
+  "source": "Archivos originales del pack Forge 1.20.1 recuperados del archivo de trabajo",
   "binaries_in_repository": false,
   "mods": [
     {

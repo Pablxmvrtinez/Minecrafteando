@@ -1,46 +1,28 @@
-# Roadmap de aprendizaje de Minecraft Modding
+# Cosas que quiero aprender de modding
 
-## Fase 1: Preparación
+Voy practicando Java con proyectos pequeños de Minecraft. Tomatazo es el primer mod con un proyecto completo en este repositorio.
 
-- [ ] Instalar JDK correcto
-- [ ] Instalar IDE
-- [ ] Crear carpeta de proyectos
-- [ ] Configurar Git
-- [ ] Crear primer repositorio limpio
+## Java y Gradle
 
-## Fase 2: Java básico necesario
+- [ ] Repasar clases, métodos, herencia y manejo de errores con ejemplos propios.
+- [ ] Entender bien el registro de bloques, ítems y entidades.
+- [ ] Aprender a depurar desde el entorno de desarrollo.
+- [ ] Saber actualizar un proyecto cuando cambia la versión de Minecraft.
 
-- [ ] Variables
-- [ ] Condiciones
-- [ ] Bucles
-- [ ] Métodos
-- [ ] Clases
-- [ ] Objetos
-- [ ] Paquetes
-- [ ] Errores y excepciones
+## Minecraft
 
-## Fase 3: Primer mod
+- [x] Montar la estructura de un proyecto Fabric.
+- [x] Añadir un ítem y sus texturas.
+- [x] Crear un cultivo y definir qué suelta.
+- [x] Añadir una entidad lanzable y sus efectos.
+- [ ] Probar el mod en más de una instalación y anotar los errores encontrados.
+- [ ] Añadir recetas y sonidos propios.
+- [ ] Preparar una publicación con una versión compilada y probada.
 
-- [ ] Crear proyecto base
-- [ ] Ejecutar cliente de Minecraft
-- [ ] Crear primer ítem
-- [ ] Crear primer bloque
-- [ ] Añadir receta
-- [ ] Añadir textura
-- [ ] Añadir traducción al español
+## Para el repositorio
 
-## Fase 4: Mejoras
+- [x] Subir el código y algunas capturas de Tomatazo.
+- [ ] Mantener instrucciones de compilación según cambien las dependencias.
+- [ ] Recuperar las fuentes de los mods de Forge, no solo los JAR compilados.
 
-- [ ] Crear herramienta personalizada
-- [ ] Crear comida con efecto
-- [ ] Crear bloque con comportamiento
-- [ ] Crear sonidos
-- [ ] Crear loot tables
-- [ ] Crear avance personalizado
-
-## Fase 5: Portfolio
-
-- [ ] Añadir capturas
-- [ ] Crear README del mod
-- [ ] Publicar release
-- [ ] Explicar qué he aprendido
+Estas casillas reflejan trabajo que aparece en el código, no una certificación de que todo esté probado en el juego.

@@ -1,53 +1,27 @@
-# ⛏️ Minecrafteando
+# Minecrafteando
 
-Repositorio dedicado a mis proyectos de **modding de Minecraft**, programación en **Java** y desarrollo de videojuegos.
+Aquí guardo los mods de Minecraft que voy haciendo mientras aprendo Java y pruebo cosas con Fabric y Forge.
 
-Este repositorio será mi base para aprender programación creando cosas reales dentro de Minecraft: mods, pruebas, mecánicas, recursos y documentación.
+## Proyectos
 
----
+- **[Tomatazo](mods/fabric/primer-mod/)**: cultivos de tomate, semillas y tomates que se pueden comer o lanzar.
+- **[Mods para Forge 1.20.1](mods/forge/)**: notas y versiones de Gremlin, Ruby/REFORCED, Mochilas + Hornos y Mazmorras de Duendes. Los binarios originales no están publicados en este repositorio.
 
-## 🎯 Objetivo
+## Organización
 
-Aprender programación de forma práctica creando mods de Minecraft y proyectos relacionados con videojuegos.
+- `mods/fabric/primer-mod/`: proyecto Java de Tomatazo, con Gradle, recursos y capturas.
+- `mods/forge/`: inventario de los mods de Forge y hashes de los archivos recuperados.
+- `apuntes/`: apuntes y cosas que quiero seguir practicando.
 
-La idea no es copiar código sin entenderlo, sino aprender:
+## Compilar Tomatazo
 
-- qué hace cada archivo
-- cómo se estructura un proyecto
-- cómo se registra un ítem o bloque
-- cómo se usan clases y métodos en Java
-- cómo se organiza un mod real
-- cómo se documenta un proyecto para portfolio
+Necesitas un JDK compatible con el proyecto y conexión para descargar las dependencias de Gradle.
 
----
+```bash
+cd mods/fabric/primer-mod
+./gradlew build
+```
 
-## 🧠 Qué voy a aprender
+El resultado se genera en `build/libs/` si la compilación termina correctamente.
 
-- Java aplicado a proyectos reales
-- Programación orientada a objetos
-- Clases, objetos, métodos y paquetes
-- Uso de Gradle
-- Minecraft modding con Fabric y NeoForge
-- Creación de ítems, bloques, recetas y texturas
-- Traducción de mods al español
-- Organización de proyectos con Git y GitHub
-- Documentación técnica clara
-
----
-
-## 📁 Estructura del repositorio
-
-```txt
-minecrafteando/
-├── mods/
-│   ├── fabric/
-│   └── neoforge/
-├── experimentos/
-├── recursos/
-│   ├── texturas/
-│   └── modelos/
-├── apuntes/
-├── capturas/
-└── documentacion/
-
-
+Todavía tengo pendientes las pruebas de compatibilidad de los distintos mods en una instalación real de Minecraft.

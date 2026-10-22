@@ -1,66 +1,30 @@
-# Tomatazo 🍅
+# Tomatazo
 
-Tomatazo es un mod de Minecraft hecho con Fabric que añade una nueva mecánica completa alrededor del cultivo y uso de tomates.
+Un mod de Fabric para añadir tomates a Minecraft. Puedes cultivarlos, comerlos y también tirárselos a otras entidades.
 
-## Características
+## Qué lleva
 
-- Añade semillas de tomate.
-- Las semillas pueden aparecer en cofres de aldeas.
-- Permite plantar y cultivar tomates.
-- El cultivo crece como otros cultivos normales.
-- Al cosechar un cultivo maduro, suelta tomates y semillas.
-- El tomate puede comerse.
-- Con Shift + clic derecho, el tomate se lanza como proyectil.
-- Si el tomate impacta en la parte alta de una entidad, aplica efectos durante unos segundos.
-- Añade texturas, modelos y nombres personalizados.
-- Integra el tomate en la pestaña de comida del inventario creativo.
+- Semillas que pueden encontrarse en cofres de aldeas.
+- Cultivo en tierra arada, con crecimiento y uso de polvo de hueso.
+- Cosecha que deja tomates y semillas.
+- Tomates comestibles.
+- Lanzamiento con **Shift + clic derecho**. El proyectil aplica efectos al impactar en determinadas zonas de una entidad.
+- Texturas, modelos y nombres en español e inglés.
 
-## Mecánicas principales
+## Código
 
-### Obtención
+El proyecto está hecho con Java, Fabric API y Gradle. Puedes revisar las clases de los ítems, el cultivo y el proyectil en `src/main/java/`, y sus recursos en `src/main/resources/`.
 
-Las semillas de tomate pueden aparecer en cofres de aldeas. Esto permite conseguirlas de forma natural durante la exploración.
+Para compilarlo desde esta carpeta:
 
-### Cultivo
+```bash
+./gradlew build
+```
 
-Las semillas se pueden plantar en tierra arada. El cultivo puede crecer con el tiempo o usando polvo de hueso.
-
-### Cosecha
-
-Al romper un cultivo maduro, se obtienen tomates y semillas para seguir cultivando.
-
-### Uso del tomate
-
-El tomate tiene dos usos:
-
-- Clic derecho normal: comer.
-- Shift + clic derecho: lanzar como proyectil.
-
-Si el tomate lanzado golpea a una entidad en la parte alta del cuerpo, aplica efectos durante unos segundos.
-
-## Tecnologías usadas
-
-- Java
-- Fabric
-- Gradle
-- Minecraft modding
-- Git y GitHub
-
-## Estado del proyecto
-
-La funcionalidad principal está terminada. El mod incluye obtención, cultivo, comida, proyectil, efectos y pulido visual básico.
-
-## Autor
-
-Proyecto creado por Pablxmvrtiinez como práctica de programación Java y modding de Minecraft.
+Hace falta tener instalado el JDK adecuado para la versión del proyecto. La compilación y el funcionamiento en el juego son comprobaciones distintas.
 
 ## Capturas
 
-### Cultivo y semillas de tomate
-
 ![Cultivo de tomate](capturas/cultivo-tomate.png)
 
-### Tomate lanzado
-
 ![Tomate lanzado](capturas/tomate-lanzado.png)
-
