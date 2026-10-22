@@ -1,0 +1,37 @@
+{
+  "minecraft": "1.20.1",
+  "forge": "47.4.10",
+  "java": "17",
+  "source": "Archivos originales de PACK-CODEX-1.20.1-FORGE.zip recuperados de biblioteca",
+  "binaries_in_repository": false,
+  "mods": [
+    {
+      "name": "Gremlin de los Acertijos",
+      "id": "gremlin",
+      "filename": "gremlin-1.20.1-forge-1.2.1.jar",
+      "internal_version": "1.2.1",
+      "sha256": "0c379c593f4659b63a148081c1cd226c308d3bb52b746362fe67d3052e19d79e"
+    },
+    {
+      "name": "Ruby + REFORCED",
+      "id": "reforced",
+      "filename": "ruby-reforced-1.20.1-forge-1.0.3.jar",
+      "internal_version": "1.0.2",
+      "sha256": "a51f3a510d9f3bd20e77219c644993f15aa4a229fe02665633fa750f5d173036"
+    },
+    {
+      "name": "Mochilas + Hornos",
+      "id": "pockets",
+      "filename": "mochilas-hornos-1.20.1-forge-1.0.1.jar",
+      "internal_version": "1.0.0",
+      "sha256": "44ee1857ef0e8e608a59134a3d30bf87a1f008bd7a2386b6e31cb69e12d9e504"
+    },
+    {
+      "name": "Mazmorras de Duendes",
+      "id": "duendes",
+      "filename": "mazmorras-duendes-1.20.1-forge-1.0.2.jar",
+      "internal_version": "1.0.0",
+      "sha256": "10ec2ce3cc5c6aa189f71a22cb9b6232b5abfaf70412476e850175b8dc3793fa"
+    }
+  ]
+}
