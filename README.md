@@ -1,5 +1,7 @@
 # Minecrafteando
 
+[![Compilación de Tomatazo](https://github.com/Pablxmvrtinez/Minecrafteando/actions/workflows/tomatazo-build.yml/badge.svg)](https://github.com/Pablxmvrtinez/Minecrafteando/actions/workflows/tomatazo-build.yml)
+
 **Mi espacio para aprender a crear mods de Minecraft con Java.**
 
 Este repositorio reúne código, recursos y documentación de proyectos desarrollados con **Fabric** y **Forge**. Su objetivo es que puedas encontrar rápidamente qué mod tiene código disponible, qué parte está documentada y cómo compilar lo que ya existe.
@@ -33,6 +35,8 @@ cd mods\fabric\primer-mod
 ~~~
 
 Si la compilación termina sin errores, busca el JAR en `mods/fabric/primer-mod/build/libs/`. Antes de usarlo, comprueba las versiones de Minecraft, Fabric y las dependencias definidas en el proyecto: no todos los JAR funcionan en todas las versiones.
+
+**Descargar una compilación desde GitHub:** abre [las compilaciones de Tomatazo](https://github.com/Pablxmvrtinez/Minecrafteando/actions/workflows/tomatazo-build.yml), entra en una ejecución correcta y descarga el artefacto `tomatazo-fabric-build`. Descomprime el ZIP y elige el JAR normal (no el archivo `-sources.jar`). Los artefactos se conservan durante 7 días. Por ahora son compilaciones de prueba, no versiones verificadas dentro de Minecraft.
 
 ### Qué hace Tomatazo
 
