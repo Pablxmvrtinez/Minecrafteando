@@ -33,6 +33,8 @@ jobs:
         run: python3 scripts/check_metadata.py
       - name: Compilar mod con Gradle Wrapper
         run: bash ./gradlew --no-daemon build
+      - name: Inspeccionar JAR generado
+        run: python3 scripts/check_jar.py
       - name: Guardar archivos compilados
         uses: actions/upload-artifact@v4
         with:
