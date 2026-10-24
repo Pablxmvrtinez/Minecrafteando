@@ -6,7 +6,7 @@ Un mod de Fabric para añadir tomates a Minecraft. Puedes cultivarlos, comerlos 
 
 - Semillas que pueden encontrarse en cofres de aldeas.
 - Cultivo en tierra arada, con crecimiento y uso de polvo de hueso.
-- Cosecha que deja tomates y semillas.
+- Cosecha madura que deja **2–5 tomates** y **2–3 semillas**. Antes de madurar, devuelve una semilla.
 - Tomates comestibles.
 - Lanzamiento con **Shift + clic derecho**. El proyectil aplica efectos al impactar en determinadas zonas de una entidad.
 - Texturas, modelos y nombres en español e inglés.
