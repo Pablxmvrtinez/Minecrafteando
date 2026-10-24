@@ -23,6 +23,8 @@ Para compilarlo desde esta carpeta:
 
 Hace falta tener instalado el JDK adecuado para la versión del proyecto. La compilación y el funcionamiento en el juego son comprobaciones distintas.
 
+El proyecto utiliza Java 25. La [compilación automática](../../../.github/workflows/tomatazo-build.yml) comprueba el código con Gradle y, cuando termina correctamente, permite descargar los JAR generados desde GitHub Actions. Un JAR compilado no garantiza que el mod funcione en el juego; aún necesita pruebas dentro de Minecraft.
+
 ## Capturas
 
 ![Cultivo de tomate](capturas/cultivo-tomate.png)
