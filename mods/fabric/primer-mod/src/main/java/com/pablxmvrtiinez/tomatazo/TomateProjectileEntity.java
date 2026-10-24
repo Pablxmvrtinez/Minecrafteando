@@ -1,5 +1,6 @@
 package com.pablxmvrtiinez.tomatazo;
 
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -34,6 +35,11 @@ public class TomateProjectileEntity extends ThrowableItemProjectile {
     protected void onHitEntity(EntityHitResult hitResult) {
         super.onHitEntity(hitResult);
 
+        // Las alteraciones de estado se aplican en el servidor.
+        if (!(this.level() instanceof ServerLevel)) {
+            return;
+        }
+
         Entity entity = hitResult.getEntity();
 
         if (entity instanceof LivingEntity livingEntity) {
@@ -46,9 +52,9 @@ public class TomateProjectileEntity extends ThrowableItemProjectile {
                 livingEntity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 0));
                 livingEntity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 0));
 
-                TomatazoMod.LOGGER.info("Tomatazo en la cabeza: entidad cegada y marcada 3 segundos.");
+                TomatazoMod.LOGGER.debug("Tomatazo en la cabeza: entidad cegada y marcada 3 segundos.");
             } else {
-                TomatazoMod.LOGGER.info("Tomatazo golpeó entidad, pero no suficientemente alto.");
+                TomatazoMod.LOGGER.debug("Tomatazo golpeó entidad, pero no suficientemente alto.");
             }
         }
     }
