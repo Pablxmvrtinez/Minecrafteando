@@ -27,7 +27,7 @@ public class TomateCropBlock extends CropBlock {
 
         if (this.isMaxAge(state)) {
             int cantidadTomates = ThreadLocalRandom.current().nextInt(2, 6);
-            int cantidadSemillas = ThreadLocalRandom.current().nextInt(1, 4);
+            int cantidadSemillas = ThreadLocalRandom.current().nextInt(2, 4);
 
             drops.add(new ItemStack(ModItems.TOMATE, cantidadTomates));
             drops.add(new ItemStack(ModItems.SEMILLAS_TOMATE, cantidadSemillas));
